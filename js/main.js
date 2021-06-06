@@ -22,10 +22,10 @@ function firstQuestion(){
     Swal.fire({
         title: CONFIG.introTitle,
         text: CONFIG.introDesc,
-        imageUrl: 'https://lh3.googleusercontent.com/proxy/weO1PklZ-NE4ATdU8nkVDZQ5uPOpdLKfqYJBzIxPqiUnHz7Ne-yf63usf0fA5hZ5Zam15QlArd7m3E_Atkeagk57LbMd5Y3Hd_Ctzm5kJig0',
+        imageUrl: 'https://anhdepblog.com/wp-content/uploads/2018/02/anime-hon-nhau-8.jpg',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("http://totinh2005.000webhostapp.com/img/iput-bg.jpg")',
+        background: '#fff url("https://github.com/demngayyeu/answer_question_4/blob/main/img/iput-bg.jpg?raw=true")',
         imageAlt: 'Custom image',
         confirmButtonText: CONFIG.btnIntro
       }).then(function(){
@@ -35,7 +35,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('http://totinh2005.000webhostapp.com/sound/duck.mp3');
+    var audio = new Audio('https://raw.githubusercontent.com/demngayyeu/answer_question_4/main/music/duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -48,7 +48,7 @@ function firstQuestion(){
 }
 // move random button pĂ³ition
 function moveButton() {
-    var audio = new Audio('http://totinh2005.000webhostapp.com/sound/Swish1.mp3');
+    var audio = new Audio('https://raw.githubusercontent.com/demngayyeu/answer_question_4/main/music/Swish1.mp3');
     audio.play();
     var x = Math.random() * ($(window).width() - $('#no').width()) * 0.9 ;
     var y = Math.random() * ($(window).height() - $('#no').height()) * 0.9;
@@ -104,7 +104,7 @@ $('#yes').click(function() {
         width: 900,
         padding: '3em',
         html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
-        background: '#fff url("http://totinh2005.000webhostapp.com/img/iput-bg.jpg")',
+        background: '#fff url("https://github.com/demngayyeu/answer_question_4/blob/main/img/iput-bg.jpg?raw=true")',
         backdrop: `
               rgba(0,0,123,0.4)
               url("img/giphy2.gif")
@@ -119,7 +119,7 @@ $('#yes').click(function() {
             Swal.fire({
                 width: 900,
                 confirmButtonText: CONFIG.btnAccept,
-                background: '#fff url("http://totinh2005.000webhostapp.com/img/iput-bg.jpg")',
+                background: '#fff url("https://github.com/demngayyeu/answer_question_4/blob/main/img/iput-bg.jpg?raw=true")',
                 title: CONFIG.mess,
                 text: CONFIG.messDesc,
                 confirmButtonColor: '#83d0c9',
